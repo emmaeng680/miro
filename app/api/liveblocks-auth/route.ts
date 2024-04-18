@@ -3,10 +3,10 @@ import { Liveblocks } from "@liveblocks/node";
 import { api } from "@/convex/_generated/api";
 import { ConvexHttpClient } from "convex/browser";
 
-const convex = new ConvexHttpClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
+const convex = new ConvexHttpClient("https://terrific-puma-325.convex.cloud"!);
 
 const liveBlocks = new Liveblocks({
-  secret: process.env.LIVEBLOCKS_SECRET_KEY!,
+  secret: "sk_dev_XN94WhSPVb7dvm4E3VoadXknfsg9sw8J4eXd0lR-djjNkBHMZHiX0NnzJeI1Hf2g"!,
 });
 
 export async function POST(request: Request) {
